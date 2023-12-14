@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Clapperboard } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export const Actions = async () => {
   const user = await currentUser();
@@ -28,6 +29,7 @@ export const Actions = async () => {
               <span className="hidden lg:block">Dashboard</span>
             </Link>
           </Button>
+          
           <UserButton afterSignOutUrl="/" />
         </div>
       )}
